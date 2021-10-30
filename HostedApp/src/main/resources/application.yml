@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: HostedApp
+
+server:
+  port: 6500
+  ssl:
+    key-store: file:/C:\\Users\\bigro\\Projects\\WebluxWebClientFetchContent1\\certs\\hostedapp.p12
+    key-store-password: ${KEYPASS}
+    trust-store: file:/C:\\Users\\bigro\\Projects\\WebluxWebClientFetchContent1\\certs\\trust.p12
+    trust-store-password: ${TRUSTPASS}
+    enabled: true
+    client-auth: need
